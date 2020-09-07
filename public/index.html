@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-area">
+            <div  class="header-top_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="social_media_links">
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <div class=" col d-none d-lg-block">
+                            <div class="btn-x">
+                                <a href="#">CERRAR SESION</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-header" class="main-header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-4">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <div class="toolbar">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">INICIO</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">CALENDARIO</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">MI CUENTA<i class="ti-angle-down"></i></a>
+                                        <ul class="submenu">
+                                            <li><a href="#">DATOS PERSONALES</a></li>
+                                            <li><a href="#">DOCTORES</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">AYUDA</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-8 d-lg-none" >
+                            <div id="mySidebar" class="sidebar">
+                                <a href="#" class="closebtn" onclick="closeNav()">×</a>
+                                <a href="index.html">INICIO</a>
+                                <a href="#">CALENDARIO</a>
+                                <a href="#" onclick="openNav2()">MI CUENTA<i class="ti-angle-down"></i></a>
+                                <div id="mySidebar2" class="sidebar">
+                                    <a href="#" class="closebtn" onclick="closeNav2()">×</a>
+                                    <a href="#"><br><br>DATOS PERSONALES</a>
+                                    <a href="#">DOCTORES</a>
+                                </div>   
+                                <a href="#">AYUDA</a>
+                                <a href="#">CERRAR SESION</a>
+                              </div>
+                              
+                              <div id="main">
+                                <a onclick="openNav()" >☰</a> 
+                              </div>
+                              
+                              <script>
+                              function openNav() {
+                                document.getElementById("mySidebar").style.width = "250px";
+                                document.getElementById("main").style.marginLeft = "250px";
+                              }
+
+                              function openNav2() {
+                                document.getElementById("mySidebar2").style.width = "250px";
+                                document.getElementById("main").style.marginLeft = "250px";
+                              }
+                              
+                              function closeNav() {
+                                document.getElementById("mySidebar").style.width = "0";
+                                document.getElementById("main").style.marginLeft= "0";
+                              }
+
+                              function closeNav2() {
+                                document.getElementById("mySidebar2").style.width = "0";
+                                document.getElementById("main").style.marginLeft= "0";
+                              }
+                              </script>
+                            
+                        </div>
+                        <div class="col-lg-3 col-12" id="pedirTurno">
+                            <div class="btn-x">
+                                <a href="#">PEDIR TURNO</a>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
